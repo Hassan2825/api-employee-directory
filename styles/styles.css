@@ -1,0 +1,84 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative; 
+    padding: 2%;
+    background-color: #fcfcfc;
+    min-width: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 0.4);
+}
+
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+} 
+
+h1 {
+    color: #4b4b4b;
+    font-size: 1rem;
+    text-transform: uppercase;
+    justify-content: stretch;
+    margin-bottom: 3%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: auto;
+    align-content: center;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    padding: 3%;
+}
+
+    .card img {
+        min-width: 27%;
+        border-radius: 50%;
+        padding: 2%;
+    }
+
+    .name {
+        font-size: 1rem;
+        color: #303436
+    }
+
+    .email, .city, .address {
+        color: #848789;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }  
