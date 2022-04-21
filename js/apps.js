@@ -15,6 +15,7 @@ fetch(urlAPI)
 
 function displayEmployees(employeeData) {
     employees = employeeData;
+    console.log(employees)
     // store the employee HTML as we create it
     let employeeHTML = '';
     // loop through each employee and create HTML markup
@@ -51,8 +52,8 @@ function displayModal(index) {
     <p class="address">${city}</p>
     <hr />
     <p>${phone}</p>
-    <p class="address">${street}, ${state} ${postcode}</p>
-    <p>Birthday:
+    <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
+    <p> Birthday:
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     </div>
     `;
@@ -63,7 +64,6 @@ function displayModal(index) {
 gridContainer.addEventListener('click', e => {
 
     // make sure the click is not on the gridContainer itself
-    console.log("Hello")
     if (e.target !== gridContainer) {
     // select the card element based on its proximity to actual element clicked
     const card = e.target.closest(".card");
@@ -74,7 +74,6 @@ gridContainer.addEventListener('click', e => {
 });
 
 modalClose.addEventListener('click', () => {
-    console.log("Hello")
     overlay.classList.add("hidden");
 });
             
